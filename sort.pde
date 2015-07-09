@@ -1,5 +1,6 @@
 int[] a = new int[20];
  int j=0, k=0,p=0;
+ int time;
 
 void setup(){
   size(500,500);
@@ -35,12 +36,9 @@ void draw(){
       rect(50+20*d,20,20,4*a[d]);  
     }
     j++;
-    delay(100);
-  }
-  if(j>=20){
-    
+    time = millis();
+    while(millis() - time <= 100){}
   }
  
   
 }
-
